@@ -1,53 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Chess Board with Icons</title>
-  <style>
-    .board {
-      display: grid;
-      grid-template-columns: repeat(8, 60px);
-      grid-template-rows: repeat(8, 60px);
-      width: 480px;
-      height: 480px;
-      border: 2px solid #333;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Chess Board - W3Schools Box Model</title>
+    <style>
+        body {
+            padding: 50px;
+            background-color: #f5f5f5;
+            margin-left: 350px;
+        }
+        
+        .chess-row {
+            width: 100%;
+            height: 60px;
+            margin: 0;
+        }
+        .chess-row1 {      
 
-    .square {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-size: cover;
-    }
+            width: 100%;
+            height: 60px;
+            margin: 0;
+            color: rgb(65, 70, 64);
+        }
+        
+        .square {
+            width: 60px;
+            height: 60px;
+            float: left;
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+            line-height: 60px;
+            
+        }
+        
+        .light {
+            background-color: #ECECD6;
+        }
+        
+        .dark {
+            background-color: #728E55;
+        }
+        
+        h1{
+          color: #728E55;
+          background-color: 
+          font-size: 50px;
+          width: 56%;
+          padding-left:2% ;
+          text-align: center;
+        }
 
-    .white { background-color: #f0d9b5; }
-    .black { background-color: #b58863; }
-
-    .square img {
-      width: 40px;
-      height: 40px;
-      object-fit: contain;
-    }
-  </style>
+    </style>
 </head>
 <body>
 
-<div class="board">
-  <!-- Row 8: Black pieces -->
-  <div class="square white"><img src="black-rook.png" alt=""></div>
-  <div class="square black"><img src="black-knight.png" alt=""></div>
-  <div class="square white"><img src="black-bishop.png" alt=""></div>
-  <div class="square black"><img src="black-queen.png" alt=""></div>
-  <div class="square white"><img src="black-king.png" alt=""></div>
-  <div class="square black"><img src="black-bishop.png" alt=""></div>
-  <div class="square white"><img src="black-knight.png" alt=""></div>
-  <div class="square black"><img src="black-rook.png" alt=""></div>
+<h1><u>Chess Table</u></h1>
 
-  <!-- Row 7: Black pawns -->
-  <div class="square black"><img src="black-pawn.png" alt=""></div>
-  <!-- repeat 7 more -->
-  ...
-</div>
+        <div class="chess-row">
+            <div class="square light">♜</div>
+            <div class="square dark">♞</div>
+            <div class="square light">♝</div>
+            <div class="square dark">♛</div>
+            <div class="square light">♚</div>
+            <div class="square dark">♝</div>
+            <div class="square light">♞</div>
+            <div class="square dark">♜</div>
+            <div class="clear"></div>
+        </div>
+        
+        <div class="chess-row">
+            <div class="square dark">♟</div>
+            <div class="square light">♟</div>
+            <div class="square dark">♟</div>
+            <div class="square light">♟</div>
+            <div class="square dark">♟</div>
+            <div class="square light">♟</div>
+            <div class="square dark">♟</div>
+            <div class="square light">♟</div>
+            <div class="clear"></div>
+        </div>
 
-</body>
+            <div class="chess-row">
+            <div class="square light"></div>
+            <div class="square dark"></div>
+            <div class="square light"></div>
+            <div class="square dark"></div>
+            <div class="square light"></div>
+            <div class="square dark"></div>
+            <div class="square light"></div>
+            <div class="square dark"></div>
+            <div class="clear"></div>
+        </div>
+        
+        <div class="chess-row">
+            <div class="square dark"></div>
+            <div class="square light"></div>
+            <div class="square dark"></div>
+            <div class="square light"></div>
+            <div class="square dark"></div>
+            <div class="square light"></div>
+            <div class="square dark"></div>
+            <div class="square light"></div>
+            <div class="clear"></div>
+        </div>
+        
+        <div class="chess-row">
+            <div class="square light"></div>
+            <div class="square dark"></div>
+            <div class="square light"></div>
+            <div class="square dark"></div>
+            <div class="square light"></div>
+            <div class="square dark"></div>
+            <div class="square light"></div>
+            <div class="square dark"></div>
+            <div class="clear"></div>
+        </div>
+        
+        <div class="chess-row">
+            <div class="square dark"></div>
+            <div class="square light"></div>
+            <div class="square dark"></div>
+            <div class="square light"></div>
+            <div class="square dark"></div>
+            <div class="square light"></div>
+            <div class="square dark"></div>
+            <div class="square light"></div>
+            <div class="clear"></div>
+        </div>
+        
+        <div class="chess-row1">
+            <div class="square light">♙</div>
+            <div class="square dark">♙</div>
+            <div class="square light">♙</div>
+            <div class="square dark">♙</div>
+            <div class="square light">♙</div>
+            <div class="square dark">♙</div>
+            <div class="square light">♙</div>
+            <div class="square dark">♙</div>
+            <div class="clear"></div>
+        </div>
+        
+        <div class="chess-row1">
+            <div class="square dark">♖</div>
+            <div class="square light">♘</div>
+            <div class="square dark">♗</div>
+            <div class="square light">♕</div>
+            <div class="square dark">♔</div>
+            <div class="square light">♗</div>
+            <div class="square dark">♘</div>
+            <div class="square light">♖</div>
+            <div class="clear"></div>
+        </div>
+    </div>
 </html>
